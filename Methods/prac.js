@@ -1,4 +1,2 @@
-var a= [5,10,15]
-
-// var result = 
-console.log(Math.max(...a))
+var a= 53.325
+var b = parseFloat(a)
