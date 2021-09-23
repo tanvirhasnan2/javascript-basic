@@ -26,3 +26,19 @@ var mul = (a,b) => a*b
 
 console.log(mul(5,6))
 
+//-----------------------Practice --------------------
+var arr1 = [10,20,30,40]
+var isFound = false
+var find = (a) => {
+    for(var i=0; i<arr1.length; i++){
+        if(a===arr1[i]){
+            console.log('Found', a, 'at the index', i)
+            isFound = true
+        }
+    }
+    if(!isFound){
+        console.log('Not found')
+    }
+}
+
+find(70)
