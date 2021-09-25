@@ -142,3 +142,30 @@ console.log('a Property exist in the object obj1:','a' in obj1) // teturn true b
 console.log('x Property exist in the object obj1:','x' in obj1) //teturn false because 'x' is not exist in the object
 
 
+//Travers all the property of object using 'for in' loop
+var obj1 = {
+    a: 'Tan',
+    b: 10,
+    c: 'Dhaka'
+}
+
+for(var i in obj1){
+    console.log(i)
+    console.log(i,':',obj1[i])
+}
+
+//----------------------------------------Object Methods-------------------------------------
+var obj1 = {
+    a: 'Tan',
+    b: 10,
+    c: 'Dhaka'
+}
+console.log(Object.keys(obj1)) // We will get all the property of obj1 in a array
+console.log(Object.values(obj1)) // We will get all the values of obj1 in a array
+console.log(Object.entries(obj1)) // We will get all the property and values of obj1 in a 2D array
+
+var newObj = Object.assign({}, obj) // Create a new Object(obj2) by copying old Object(obj1)
+console.log('new: ',obj2)
+
+
+

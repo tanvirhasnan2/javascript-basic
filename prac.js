@@ -63,21 +63,14 @@
 
 
 
-var obj5 = {
-    Name: 'Tan',
-    Age: 10,
-    Location: 'Dhaka'
-}
+// var obj5 = {
+//     Name: 'Tan',
+//     Age: 10,
+//     Location: 'Dhaka'
+// }
 
-delete obj5.Name
-console.log(obj5)
-
-
-
-
-
-
-
+// delete obj5.Name
+// console.log(obj5)
 
 
 // var num = 10;
@@ -93,4 +86,51 @@ console.log(obj5)
 //         break;
 //     default: console.log("Nothing");
 // }
+
+
+
+var person = {
+    Name: 'Tanvir',
+    Age: 25,
+    Gender: 'Male'
+}
+
+var person2 = Object()
+person2.Name = 'Farzana',
+person2.Age = 25,
+person2['Gender'] = 'Female'
+
+// console.log(person.Name === person2.Name)
+// console.log(person.Age === person2.Age)
+
+
+// console.log(JSON.stringify(person))
+// console.log(JSON.stringify(person2))
+// console.log(JSON.stringify(person) === JSON.stringify(person2))
+
+// var person3 = new Object()
+// person3.Name = 'Ochena',
+// person3.Age = 34,
+// person3['Gender'] = 'Male'
+
+
+// console.log(person)
+// console.log(person2)
+// console.log(person3)
+
+// console.log(person.Age)
+// console.log(person['Name'])
+
+
+
+var person = {
+    Name: 'Tanvir',
+    Age: 25,
+    Gender: 'Male'
+}
+
+for (var i in person){
+    console.log(i)
+    console.log(person[i])
+}
 
