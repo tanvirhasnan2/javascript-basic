@@ -89,16 +89,16 @@
 
 
 
-var person = {
-    Name: 'Tanvir',
-    Age: 25,
-    Gender: 'Male'
-}
+// var person = {
+//     Name: 'Tanvir',
+//     Age: 25,
+//     Gender: 'Male'
+// }
 
-var person2 = Object()
-person2.Name = 'Farzana',
-person2.Age = 25,
-person2['Gender'] = 'Female'
+// var person2 = Object()
+// person2.Name = 'Farzana',
+// person2.Age = 25,
+// person2['Gender'] = 'Female'
 
 // console.log(person.Name === person2.Name)
 // console.log(person.Age === person2.Age)
@@ -129,8 +129,31 @@ var person = {
     Gender: 'Male'
 }
 
-for (var i in person){
-    console.log(i)
-    console.log(person[i])
-}
+delete person.Name
+console.log(person)
+// for (var i in person){
+//     console.log(i)
+//     console.log(person[i])
+// }
+
+
+// var arr = [1,2,3,4,5,6,7,8,9]
+// var sum = ''
+// for(var i=0; i<arr.length; i++){
+//     sum+=arr[i]
+//     console.log(sum)
+// }
+
+
+
+// //Shape 01
+// var n = 50
+// var sum = ''
+// for(var i=0; i<n; i++){
+//     sum += '* '
+//     console.log(sum)
+// }
+
+
+
 
