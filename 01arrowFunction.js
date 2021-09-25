@@ -27,7 +27,7 @@ var mul = (a,b) => a*b
 console.log(mul(5,6))
 
 //-----------------------Practice --------------------
-var arr1 = [10,20,30,40]
+var arr1 = [50, 40, 55, 10, 20, 30, 40]
 var isFound = false
 var find = (a) => {
     for(var i=0; i<arr1.length; i++){
@@ -42,3 +42,14 @@ var find = (a) => {
 }
 
 find(70)
+
+
+
+
+var newArray = [...arr1].sort()
+
+console.log("new array: ", newArray)
+
+console.log('old array', arr1)
+
+
