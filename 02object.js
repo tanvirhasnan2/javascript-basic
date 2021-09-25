@@ -71,9 +71,9 @@ console.log('added two properties of the object:',point.x + point.z)
 
 
 // access using Array [] Notation
-console.log(point['x'])
-console.log(point['y'])
-console.log(point['z'])
+console.log('\nvalue of x is:',point['x'])
+console.log('value of y is:',point['y'])
+console.log('added two properties of the object:',point['z'])
 
 // console.log(point['z'])
 
@@ -86,7 +86,7 @@ var obj5 = {
 }
 
 delete obj5.Name
-console.log(obj5)
+console.log('Print Object5:',obj5)
 
 //Comparing Object
 var obj1 = {
@@ -101,17 +101,17 @@ var obj2 = {
     z: 'Dhaka'
 }
 
-console.log(obj1===obj2) //False because memory location different
+console.log('\nCompare in a wrong way', obj1===obj2) //False because memory location different
 
 
 // Only compare the value of the property
 if(obj1.a === obj2.x && obj1.b === obj2.y && obj1.c===obj2.z){
-    console.log(true)
+    console.log('\nMatched values of Property:', true)
 } else {
-    console.log(false)
+    console.log('\nDoes not Matched values of Property:',false)
 }
 //First convert the object to string then compare the property and the value of object
-console.log(JSON.stringify(obj1) === JSON.stringify(obj2))
+console.log('\nConvert to String and compare both property and values:',JSON.stringify(obj1) === JSON.stringify(obj2))
 
 
 var obj1 = {
@@ -126,6 +126,19 @@ var obj2 = {
     c: 'Dhaka'
 }
 
-console.log(obj1)
+console.log('Object is: ', obj1)
 
 console.log('Convert to string and compare:', JSON.stringify(obj1) === JSON.stringify(obj2))
+
+
+//Check properties using 'in' Operator
+var obj1 = {
+    a: 'Tan',
+    b: 10,
+    c: 'Dhaka'
+}
+console.log('a Property exist in the object obj1:','a' in obj1) // teturn true because 'a' exist in the object
+
+console.log('x Property exist in the object obj1:','x' in obj1) //teturn false because 'x' is not exist in the object
+
+
