@@ -17,6 +17,10 @@ console.log(obj3)
 obj1.x = 45
 
 console.log(obj1)
+console.log(obj3)
+
+
+
 
 
 
