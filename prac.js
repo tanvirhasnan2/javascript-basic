@@ -123,14 +123,14 @@
 
 
 
-var person = {
-    Name: 'Tanvir',
-    Age: 25,
-    Gender: 'Male'
-}
+// var person = {
+//     Name: 'Tanvir',
+//     Age: 25,
+//     Gender: 'Male'
+// }
 
-delete person.Name
-console.log(person)
+// delete person.Name
+// console.log(person)
 // for (var i in person){
 //     console.log(i)
 //     console.log(person[i])
@@ -155,5 +155,22 @@ console.log(person)
 // }
 
 
+var p = {
+    Height: '6 ft',
+    Weight: '90 KG'
+}
+
+p.Name = 'Tanvir'
 
 
+p['Last Name'] = 'Hasnan'
+
+console.log(p)
+
+
+var person3 = new Object()
+person3.Name = 'Ochena',
+person3.Age = 34,
+person3['Gender'] = 'Male'
+
+console.log(person3)
