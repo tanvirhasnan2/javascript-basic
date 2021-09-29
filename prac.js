@@ -155,22 +155,48 @@
 // }
 
 
-var p = {
-    Height: '6 ft',
-    Weight: '90 KG'
+
+
+
+// var person3 = new Object()
+// person3.Name = 'Ochena',
+// person3.Age = 34,
+// person3['Gender'] = 'Male'
+
+// console.log(person3)
+
+// var newObject = {
+//     People 1 : 'Tanvir',
+//     p
+// }
+
+// var p = {
+//     Height: '6 ft',
+//     Weight: '90 KG'
+// }
+
+// p.Name = 'Tanvir'
+
+
+// p['LastName'] = 'Hasnan'
+
+// console.log(p)
+
+// for ( var i in p){
+//     // console.log(i)
+//     console.log(i,':',p[i])
+// }
+
+
+var person = {
+    Name: 'Tanvir',
+    Age: 25,
+    Gender: 'Male'
 }
 
-p.Name = 'Tanvir'
-
-
-p['Last Name'] = 'Hasnan'
-
-console.log(p)
-
-
-var person3 = new Object()
-person3.Name = 'Ochena',
-person3.Age = 34,
-person3['Gender'] = 'Male'
-
-console.log(person3)
+delete person.Name
+console.log(person)
+for (var i in person){
+    console.log(i)
+    console.log(person[i])
+}
