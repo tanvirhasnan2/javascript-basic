@@ -188,15 +188,137 @@
 // }
 
 
-var person = {
-    Name: 'Tanvir',
-    Age: 25,
-    Gender: 'Male'
+// var person = {
+//     Name: 'Tanvir',
+//     Age: 25,
+//     Gender: 'Male'
+// }
+
+// delete person.Name
+// console.log(person)
+// for (var i in person){
+//     console.log(i)
+//     console.log(person[i])
+// }
+
+
+// function add(a,b) {
+//     var sum = a+b
+//     console.log(sum)
+// }
+
+// add(10,20)
+
+// var add = (a,b) => console.log(a*b)
+
+// add(5,10)
+
+// var div =() => console.log('Hello')
+
+// div()
+
+// var arr1 = [5,10,15]
+// var arr2 = [10,10,15]
+// var arr3 = [15,10,15]
+
+
+// function sumArray(arr){
+//     var sum = 0
+//     for (i=0; i<arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     console.log(sum)
+// }
+
+// sumArray(arr1)
+// sumArray(arr2)
+// sumArray(arr3)
+
+
+// var arr1 = [5,10,15]
+// var arr2 = [10,10,15]
+// var arr3 = [15,10,15]
+
+
+// function sumArray(arr){
+//     var sum = 0
+//     for (i=0; i<arr.length; i++){
+//         sum+=arr[i]
+//     }
+//     return sum
+// }
+
+//sumArray(arr1)
+// console.log(sumArray(arr1) + 5)
+// sumArray(arr2)
+// sumArray(arr3)
+
+// function addAll(){
+//     var sum = 0
+//     for (var i=0; i<arguments.length; i++){
+//         sum+= arguments[i]
+//     }
+//     console.log(sum)
+// }
+
+// addAll(1,2,3)
+// addAll(1,2,3,4,5)
+
+
+// function addAll(){
+//     var sum = 0
+//     for (var i=0; i<arguments.length; i++){
+//         sum+= arguments[i]
+//     }
+//     return sum
+// }
+
+// var x = addAll(1,2,3)
+// var y = addAll(1,2,3,4,5)
+// console.log(x);
+// console.log(y);
+
+
+// function obj(firstName, lastName){
+//     return {
+//         firstName: firstName,
+//         lastName: lastName
+//     }
+// }
+
+// var str = obj('Tanvir', 'Hasnan')
+// console.log(str)
+
+// var addition = function(a,b){
+//     return a+b
+// }
+
+// var j = addition(15,40)
+
+
+
+// setTimeout(function(){
+//     console.log('5 sec done')
+// }, 5000)
+
+// console.log(j)
+// console.log(addition(10,20))
+// console.log(addition(15,20))
+
+
+
+
+function funOne(greet, name){
+    function getFirstName(){
+        if(name){
+            return name.split(' ')[0]
+        } else {
+            return ''
+        }
+    }
+    var message = greet +' ' + getFirstName()
+    console.log(message)
 }
 
-delete person.Name
-console.log(person)
-for (var i in person){
-    console.log(i)
-    console.log(person[i])
-}
+funOne('Hello' + ' ' + 'Tanvir Hasnan')
+
