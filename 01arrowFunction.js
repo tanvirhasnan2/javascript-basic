@@ -53,3 +53,12 @@ console.log("new array: ", newArray)
 console.log('old array', arr1)
 
 
+var add = (a,b) => a+b
+console.log(add(5,5))
+
+var sqr = x => x*x
+console.log(sqr(5));
+
+
+
+

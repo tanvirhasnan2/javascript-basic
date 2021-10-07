@@ -26,14 +26,16 @@
 
 
 
-var arr1 = [1,2,3,4,5]
-arr1.forEach(function (value, index, arr){
-    if(value >3){
-        console.log(value, arr[value])
-    }
-})
+// var arr1 = [1,2,3,4,5]
+// arr1.forEach(function (value, index, arr){
+//     if(value >3){
+//         console.log(value, arr[value])
+//     }
+// })
 
 
+const array1 = ['a', 'b', 'c'];
 
+array1.forEach(element => console.log(element));
 
 
