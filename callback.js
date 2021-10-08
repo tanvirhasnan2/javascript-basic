@@ -136,16 +136,58 @@
 // })
 
 
-var arr1 = [1,2,3,4,5,6]
+// var arr1 = [1,2,3,4,5,6]
 
-function something(arr){
-    for( var i=0;i<arr.length;i++){
-        console.log(arr[i], i, arr);
-    }
+// function something(arr){
+//     for( var i=0;i<arr.length;i++){
+//         console.log(arr[i], i, arr);
+//     }
+// }
+
+
+// something(arr1)
+
+
+// function sample(a, b){
+//     var c = a + b
+//     var d = a - b
+//     var result = sum(c,d)
+//     return result
+// }
+
+// function sum(a, b){
+//     return a + b
+// }
+
+// console.log(sample(2,3))
+
+
+function sample(a, b, func){
+    var c = a + b
+    var d = a - b
+    var result = func(c,d)
+    return result
 }
 
+function sum(a, b){
+    return a + b
+}
 
-something(arr1)
+var result3 = sample(3,4,sum)
+
+console.log( result3)
+
+var result1 = sample(2,3, function (a,b){
+    return a - b 
+})
+
+console.log(result1)
+
+var result2 = sample(3,4, function(a,b){
+    return a*b
+})
+console.log( result2)
+
 
 
 

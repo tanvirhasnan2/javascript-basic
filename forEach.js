@@ -34,8 +34,64 @@
 // })
 
 
-const array1 = ['a', 'b', 'c'];
+// const array1 = ['a', 'b', 'c'];
 
-array1.forEach(element => console.log(element));
+// array1.forEach(element => console.log(element));
 
 
+// var arr = [1,2,3,4,5,6]
+// var sum = 0
+// arr.forEach(function(val,ind,array){
+//     console.log(val,ind,array)
+//     sum += val
+// })
+
+// console.log(sum)
+
+
+// var arr = [1,2,3,4,5,6]
+// function forEach(arr, cb){
+//     for (var i =0; i< arr.length; i++){
+//         cb(arr[i],i,arr)
+//     }
+// }
+// var sum = 0
+// forEach(arr, function(value,index,arr){
+//     console.log(value,index,arr)
+//     sum += value
+// })
+
+// console.log(sum)
+
+
+// var arr = [1,2,3,4,5,6]
+
+// function forEach(arr, cb){
+//     for (var i =0; i<arr.length; i++){
+//         cb(arr[i],i,arr)
+//     }
+// }
+
+
+// var sum = 0
+// forEach(arr, function(value,index,arr){
+//     console.log(value,index,arr)
+//     sum+= value
+// })
+// console.log(sum)
+
+
+// forEach(arr, function(value, index, arr){
+//     arr[index] = value + 5
+//     console.log(arr)
+// })
+// console.log(arr)
+
+
+// var arr = [1,2,3,4,5,6]
+
+// arr.forEach(function(val,ind,arr){
+//     arr[ind] = val + 100
+// })
+
+// console.log(arr)
