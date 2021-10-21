@@ -9,7 +9,18 @@ import '../styles/index.scss'
 // console.log(s)
 
 var name = `Tanvri Hasnan`
-var age = 15
+var age = 28
 
-console.log(`My name is ${name} and I am ${age} years old. I am ${age<18 ? 'not' : ''} adult`)
-console.log('My name is ' + name + ' and i am ' + age + ' years old')
+console.log(`My name is: ${name} and I am ${age} years old. I am ${age < 18 ? 'not ' : ''}adult`);
+
+
+var sqr = (n=1) => n*n
+console.log(sqr(5));
+
+
+var greet = (name = 'Tanvir', msg) => {
+    console.log(name.length)
+    console.log(`${msg}! ${name}`)
+}
+
+greet('hello')
