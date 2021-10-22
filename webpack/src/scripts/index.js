@@ -60,3 +60,29 @@ import '../styles/index.scss'
 // console.log(iterate.next);
 
 
+// let a = 10, b = 20
+
+// let obj = {
+//     a: a,
+//     b: b
+// }
+
+// let obj = {
+//     a,
+//     b,
+//     print(){
+//         console.log(this);
+//     }
+// }
+
+// console.log(obj);
+// obj.print()
+
+let s1 = Symbol()
+let s2 = Symbol('Test Symbol')
+
+console.log(s1);
+console.log(s2);
+
+console.log(s1 === s2);
+
